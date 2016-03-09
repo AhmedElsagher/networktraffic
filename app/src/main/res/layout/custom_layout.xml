@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="#afa222">
-
+>
     <ImageView
         android:id="@+id/detailsIco"
         android:layout_width="50dp"
@@ -20,15 +19,27 @@
         android:layout_toEndOf="@+id/detailsIco"
         android:layout_toRightOf="@+id/detailsIco"
         android:text="unknown process"
-        android:textSize="18sp"/>
+        android:textSize="14sp"/>
 
     <TextView
 
-        android:id="@+id/pro_id_text_view"
+        android:id="@+id/rx_tv"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/detailsIco"
-        android:layout_toEndOf="@+id/detailsIco"
-        android:layout_toRightOf="@+id/detailsIco"/>
+        android:layout_toRightOf="@+id/detailsIco"
+        android:layout_alignRight="@+id/appNameText"
+        android:layout_alignEnd="@+id/appNameText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+         android:id="@+id/tx_tv"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/rx_tv"
+        android:layout_alignTop="@+id/rx_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>
